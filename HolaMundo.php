@@ -1,6 +1,12 @@
 <?php
-    ini_set("display_errors", true);
-    error_reporting(E_ALL);
-    print("Hola mundo");
-?>
+$condifencial = "contraseña";
+$lenguaje = "PHP";
 
+//Declarando una funcion
+function view($lenguaje){
+   require 'view.php';
+}
+
+//llamando la funcion
+view($lenguaje);
+        

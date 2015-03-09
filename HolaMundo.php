@@ -1,17 +1,12 @@
 <?php
 
-//para mostrar errores
-ini_set('display errors', true);
-error_reporting(E_ALL);
+require("config.php");
+require("helpers.php");
 
-$condifencial = "contraseña";
 $lenguaje = "PHP";
-
-//Declarando una funcion
-function view($lenguaje){
-   require 'view.php';
-}
+$itulo = "Mejorando.la";
+$arreglo = array("lenguaje"=>$lenguaje, "titulo"=>$itulo);
 
 //llamando la funcion
-view($lenguaje);
+view("view", $arreglo);
         
